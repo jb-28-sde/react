@@ -1,0 +1,30 @@
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>  <!-- crossorigin attribute kyu use kiye hai ye link ek cdn link hai cdn means content delivery network jaha se hm log kuch le rhe hai in simple mai ek shop me gya or waha se maine cake liya or usko ghar le k aa gya bina kisi issue ke so cake ek cdn hai ye link ja k cake laya without anyissue kbhi kbhi hm log issue face karte hai cake kharab rehta h purana rehta hai to kharab ho jata hai so crossorigin wahi kam karta hai without anyissue wo hme easy way me content display hota hai hmari browser me is cake ki shop all over india me hai but mai to rehta hu bhilai me to mujhe satyam bakery sec10 se cake lana easy rahega to crossorigin ye ensure karta hai ki apko cake kitna easy way me milta hai or kitni jaldi milta hai link jo use ho rha hai sirf yahi kyu ho rha hai bcoz of ye small project me use hota hai or learning purpose k liye use karte hai one more imp thing ye link learning purpose ke liye use hota hai or ek link hota hai production.development search in google cdn link wo big project or bade level me kam aata hai like flipkart or insta type of wsebsite-->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    
+    <script type="text/babel">// babel kyu use karte ye translate karta hai browser ko uski language or browser sirf javascript ki lanhuage samjhta hai ap new features of javascript bhi use kar sakte hai jo kisi bhi browser me use kar sakte hai babel translate new featurs most of the browser not supportiing new features for exaple arrow function
+        //react basic example 1
+        const container = document.querySelector('.js-container'); //body me div bnaya hai usko get kar rha hu document.queryselector ki help se or usko container name variable me store kar rha hu
+        let paragraph = <p>I'm Learning React js</p> // isme ek paragraph tag bnaya hai or uske andar i am learning react js likha hai or usko paragraph variable me store kr rha hu
+        ReactDOM.createRoot(container).render(paragraph) // render kyu use karte hai jo hme display karna hai browser me wo render k use se karte hai react me jo hmne container variable and paragraph variable bnaya tha usko reactdom. creteroot kyu likhe hai react app ko jada tej or acche tarke se chalne ke liye reactdom.createroot karte hai ye new feature hai react me old feature me reactdom.render likhte the
+
+        /react basic example2
+        //in react the same code we write like this it is ease for complexity
+        const container = document.querySelector('.js-container')
+        let button = <button>Hello</button>
+        ReactDOM.createRoot(container).render(button)
+        //in javascript we write and create a button like as
+        const btn = document.createElement('button');
+        button.innerHTML = 'hello';
+
+              //react basic example3
+        //if we get both tags together then we write the code
+        const div = (
+            <div>
+                <button>Hello</button>
+                <p>I'm Learning React js</p>
+            </div>
+        )
+        const container = document.querySelector('.js-container')
+        ReactDOM.createRoot(container).render(div)

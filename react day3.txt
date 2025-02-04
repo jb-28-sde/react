@@ -1,0 +1,3 @@
+component - component in react as a building block.
+fragement - fragerment are use to stop extra code like  in div tag we create a parent tag.
+create a chatbot app 

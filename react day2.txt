@@ -1,0 +1,158 @@
+1a.(Question) Using React, display a button on the website with the text “Good Job!” inside a button.
+1a.(solution)
+   <div class="js-container"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const container = document.querySelector('.js-container')// yaha pe container ko get kiya gya hai
+        const button = <button>Good job!</button> // yaha button variable me button create kr rhe hai 
+        ReactDOM.createRoot(container).render(button)// yaha button ko render ki help se browser me display kar rhe hai
+         </script>
+         
+
+   1b.(Question) Using React, display a paragraph with the text “My name is [NAME]"
+on the website (replace [NAME] with your name).
+ 1b.(Solution)
+  <div class="js-container"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const container = document.querySelector('.js-container')
+        const paragraph = <p>My Name is Jaibhim</p>
+        ReactDOM.createRoot(container).render(paragraph)
+    </script>
+    1c.(Question)  Create the design on the right and display it on the
+website using React.
+1c.(Solution)
+<div class="js-container"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const container = document.querySelector('.js-container')
+        const div =(
+            <div>
+                <p>Cotton socks</p>
+                <p>Price : $10</p>
+                <button>Add to Cart</button>
+                </div>
+        )
+        ReactDOM.createRoot(container).render(div)
+    </script>
+
+    1d.(Question) You buy 1 pack of socks for $10 and 2 T-shirts for $8 each. Using
+JavaScript, calculate the total cost of this order, save it in a
+variable named productCost, and display it in the Console.
+1d.(Solution)
+<div class="js-container"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const container = document.querySelector('.js-container')
+        const div = (
+            <div>
+                <p>1pack of socks : ₹10</p>
+                <p>2 T-shirt for : ₹8</p>
+                </div>
+        )
+         let productCost = 10+8+8;
+         console.log(productCost);
+         </script>
+
+         1e.(Question) Continuing from 1d, insert the productCost variable into a paragraph
+element, create the design below, and display it on the website.
+1e.(Solution)
+    const container = document.querySelector('.js-container')
+        const div = (
+            <div>
+                <p>1pack of socks : ₹10</p>
+                <p>2 T-shirt for :₹8*2=₹16</p>
+                <p> Product cost : ₹{10+8*2}</p>
+                </div>
+              
+        )
+        let productCost = 10+8*2;
+         console.log(productCost);
+         ReactDOM.createRoot(container).render(div)
+    </script>
+
+    challenge exercise
+    1f.(Question) Continuing from le, let's pretend the shipping cost is $5. Save this in a
+variable named shippingCost, calculate the total cost using JavaScript
+(productCost + shippingCost), and display the results on the website
+using the design below:
+1f.(Solution)
+        const container = document.querySelector('.js-container')
+        let productCost = 10+8*2;
+        let shippingcost = 5;
+        let totalcost = productCost+shippingcost;
+        let div =(
+            <div>
+                <p>1 pack of socks : ₹10</p>
+                <p>2 T-Shirt for : ₹8*2 = ₹16</p>
+                <p>Product cost : ₹{productCost}</p>
+                <p>Shipping cost :₹{shippingcost}</p>
+                <p>Total cost : ₹{totalcost}</p>
+                <button>Place Your Order</button>
+                </div>
+        )
+        ReactDOM.createRoot(container).render(div)
+        </script>
+
+        1g.(Question) We're going to load the DayJS external library on the website (DayJS is an external library that helps us work with dates easier). 
+
+- To load DayJS, create a <script> above your code, and load the URL: https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js.
+- After DayJS is loaded, use the code: dayjs().format('MMMM D') to get the current date. Display this result in the console. “January 28”
+1g.(Solution)
+<div class="js-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/dayjs.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const container = document.querySelector('.js-container')
+        let date = dayjs().format('MMMM D')
+        console.log(date);
+        </script>
+        1i.(Question)1i. Using DayJs, get the current time using dayjs().format('HH:mm:ss"') and display it on the website in this format: “Current time: 21:39:28”.
+        1i.(Solution)
+        <div class="js-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/dayjs.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const container = document.querySelector('.js-container')
+        let time = dayjs().format('HH:mm:ss') 
+        let currentTime = <p>Current Time : {time}</p>
+        ReactDOM.createRoot(container).render(currentTime)
+        </script>
+    
+    1j.(Question)We'll create a clock. Continue from exercise 1i and do these steps:
+
+- First, instead of doing ReactDOM.createRoot(...).render(...);
+save the root in a variable const root = ReactDOM.createRoot(...);
+and then do root.render(...);
+- Use the JavaScript code: setInterval(() => { ... }, 1000);
+(replace ... with some code and it will run this code every second).
+
+Inside setInterval, display the current time on the website using root.render(...);
+(setInterval will run this code every second and this will create a clock).
+1j.(Solution)
+<script type="text/babel">
+
+     let currentTime = <p>current time :{time}</p>
+    let time = dayjs().format('HH:mm:ss')
+
+    const container = document.querySelector('.js-container');
+    let root =ReactDOM.createRoot(container);
+    root.render(currentTime)
+
+      setInterval(() => {
+        let currentTime = <p>Current time: {(dayjs().format('HH:mm:ss'))}</p>;
+        root.render(currentTime);
+      }, 1000);
+    </script>
