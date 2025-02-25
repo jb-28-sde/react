@@ -1,0 +1,33 @@
+.footer{
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  line-height: 30px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer > ul{
+  display: inline-block; 
+}
+.footer > ul > li{
+  list-style-type: none;
+  display: inline;
+  border-right: 1px solid white;
+  margin-right: 20px;
+} 
+.footer > ul > li > a{
+  text-decoration: none;
+  color: wheat;
+  padding: 2px;
+  letter-spacing: 1.85px;
+  font-size: 15px;
+}
+.footer > p{
+  color: white; 
+}
+.footer li:hover{
+  background-color: #ff0000 ;
+}

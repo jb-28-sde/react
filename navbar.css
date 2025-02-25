@@ -1,0 +1,43 @@
+.navbar{
+  width: 100%;
+  height: 70px;
+  background-color: rgba(9, 8, 8, 0.89);
+  padding: 0px 100px;
+  line-height: 60px;
+  
+}
+.logo{
+  color: #ff0000;
+  font-size: 30px;
+  font-family:sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+.navbar > ul{
+  display: inline-block;
+  margin-left: 498px;
+ 
+  
+}
+.navbar > ul > li{
+  list-style-type: none;
+  display: inline;
+  border-right: 1px solid white;
+  margin-right: 20px;
+ 
+ 
+  
+}
+.navbar > ul > li > a{
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+  letter-spacing: 1.85px;
+  font-size: 15px;
+}
+.navbar  li :hover{
+  background-color: #ff0000;
+}

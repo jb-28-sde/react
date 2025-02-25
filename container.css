@@ -1,0 +1,32 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  height: calc(100vh - 130px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(rgb(250, 242, 242), rgb(251, 252, 251), rgb(239, 239, 242), 0.8);
+  flex-direction: column;
+  background-image:url(https://img.freepik.com/premium-photo/fitness-gym-wooden-table-space-morning-light_887552-23630.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+}
+.container > p {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  margin: 15px;
+}
+.container > .btn{
+  border-radius: 8px;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.container > .btn:hover{
+  background-color: black;
+  color:#ff0000 ;
+}
