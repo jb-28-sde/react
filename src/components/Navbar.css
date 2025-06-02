@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.custom-navbar{
+    background: #2A7B9B;
+background: radial-gradient(circle, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(83, 152, 237, 1) 100%);
+padding: 10px 32px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+border-radius: 0 0 12px 12px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar-logo{
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 20px;
+}
+.navbar-logo span {
+  color: lawngreen;
+  font-weight: bold;}
+.navbar-links{
+    list-style: none;
+    display: flex;
+    gap: 148px;
+    margin-top: 20px;
+}
+.navbar-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17.6px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.navbar-links li a ::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: aquamarine;
+    transition: width 0.3s ease;
+}
+.navbar-links li a:hover ::after{
+    width: 100%;
+}
+.navbar-links li a:hover{
+    color: #fff;
+}
+.navbar-search{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.navbar-search  input{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 16px;
+    outline: none;
+    font-size: 16px;
+    width: 160px;
+}
+.navbar-search button{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 16px;
+    background-color: darkcyan;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.navbar-search button:hover{
+    background-color: aquamarine;
+}
